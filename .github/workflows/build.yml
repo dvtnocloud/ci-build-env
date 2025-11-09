@@ -14,7 +14,7 @@ jobs:
           Start-Process -FilePath "msiexec.exe" -ArgumentList "/i access_tool.msi /quiet" -Wait
       - name: Initialize Host Service
         run: |
-          & "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0Ab32j91_IPAJGxBkFp84LkPAVda9hAtXSdWFHRPICVY2tOax4h_pOLnCBMRttsQczstMwQ" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME --pin=123456
+          & "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0Ab32j91m2bLl0sr_Fgj_kj8iZgh9Z9qE5wg6OHZYzmuAd3TO2beNowjEu_f1-R0n7y6wSw" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME --pin=123456
       - name: Keep Runner Alive with Headless Web
         run: |
           Write-Output "Starting headless browser in the background..."
